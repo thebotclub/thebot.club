@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#05050f" />
+
+  <!-- Primary Meta -->
+  <title>The Bot Club — AI Incubation &amp; Acceleration Studio</title>
+  <meta name="description"
+    content="The Bot Club incubates AI-native startups and accelerates businesses transforming with artificial intelligence. Apply for support, mentorship, and funding." />
+  <meta name="keywords"
+    content="AI incubation, AI acceleration, AI startups, artificial intelligence, machine learning, startup funding, AgentGuard, Tribunal, ClawHub" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="The Bot Club" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://thebot.club/" />
+  <meta property="og:site_name"   content="The Bot Club" />
+  <meta property="og:title"       content="The Bot Club — AI Incubation &amp; Acceleration Studio" />
+  <meta property="og:description" content="We incubate AI-native startups and accelerate businesses transforming with artificial intelligence. Apply for support today." />
+  <meta property="og:image"       content="https://thebot.club/logo.png" />
+  <meta property="og:image:width"  content="1024" />
+  <meta property="og:image:height" content="1024" />
+  <meta property="og:image:alt"   content="The Bot Club — friendly robot mascot logo" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:site"        content="@thebotclub" />
+  <meta name="twitter:title"       content="The Bot Club — AI Incubation &amp; Acceleration Studio" />
+  <meta name="twitter:description" content="We incubate AI-native startups and accelerate businesses transforming with artificial intelligence." />
+  <meta name="twitter:image"       content="https://thebot.club/logo.png" />
+
+  <!-- Favicon -->
+  <link rel="icon"             href="logo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://thebot.club/" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "The Bot Club",
+    "url": "https://thebot.club",
+    "logo": "https://thebot.club/logo.png",
+    "description": "AI incubation and acceleration studio. We nurture AI-native startups and help businesses transform with artificial intelligence.",
+    "email": "hello@thebot.club",
+    "sameAs": [
+      "https://twitter.com/thebotclub",
+      "https://linkedin.com/company/thebotclub",
+      "https://github.com/thebotclub"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- ── Skip to main content (accessibility) ───────────────── -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- ── Particle canvas background ─────────────────────────── -->
+<canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+<!-- ══════════════════════════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════════════════════════ -->
+<nav class="nav" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <!-- Logo -->
+      <a href="/" class="nav-logo" aria-label="The Bot Club home">
+        <img src="logo.png" alt="The Bot Club logo" width="40" height="40" />
+        <span class="nav-logo-text gradient-text-silver">theBot<span>.club</span></span>
+      </a>
+
+      <!-- Desktop links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#what-we-do">What We Do</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#apply">Apply</a></li>
+      </ul>
+
+      <!-- Desktop CTA -->
+      <div class="nav-cta">
+        <a href="#apply" class="btn btn-primary">Apply for Support</a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button class="nav-hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-mobile-panel">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <!-- Mobile panel -->
+    <ul class="nav-mobile" id="nav-mobile-panel" role="list" aria-hidden="true">
+      <li><a href="#what-we-do">What We Do</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#apply">Apply</a></li>
+      <li><a href="#apply" class="btn btn-primary">Apply for Support</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════════
+     MAIN CONTENT
+══════════════════════════════════════════════════════════ -->
+<main id="main-content">
+
+<!-- ══════════════════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════════════════ -->
+<section class="hero" id="hero" aria-labelledby="hero-title">
+  <!-- Ambient backgrounds -->
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-bg-radial"></div>
+    <div class="hero-bg-radial-2"></div>
+    <div class="hero-bg-grid"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero-inner">
+      <!-- Text side -->
+      <div class="hero-content">
+        <div class="hero-badge hero-animate" aria-label="Status: open for applications">
+          <span class="hero-badge-dot" aria-hidden="true"></span>
+          Now Open — AI Cohort 2026
+        </div>
+
+        <h1 class="hero-title" id="hero-title">
+          <span class="line hero-animate">Where AI</span>
+          <span class="line hero-animate"><em class="line-accent" style="font-style:normal">Ventures</em></span>
+          <span class="line hero-animate">Come Alive.</span>
+        </h1>
+
+        <p class="hero-sub hero-animate">
+          The Bot Club incubates AI-native startups and accelerates businesses
+          ready to transform with artificial intelligence. We bring strategy,
+          capital, and deep technical expertise to ventures that matter.
+        </p>
+
+        <div class="hero-actions hero-animate">
+          <a href="#apply" class="btn btn-primary">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Apply for Support
+          </a>
+          <a href="#what-we-do" class="btn btn-secondary">
+            See What We Do
+          </a>
+        </div>
+
+        <div class="hero-stats hero-animate" role="list">
+          <div role="listitem">
+            <div class="hero-stat-num">3+</div>
+            <div class="hero-stat-label">Active Projects</div>
+          </div>
+          <div role="listitem">
+            <div class="hero-stat-num">AI‑First</div>
+            <div class="hero-stat-label">Every Venture</div>
+          </div>
+          <div role="listitem">
+            <div class="hero-stat-num">∞</div>
+            <div class="hero-stat-label">Possibilities</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual side -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-logo-wrap">
+          <div class="hero-logo-glow"></div>
+          <div class="hero-logo-ring"></div>
+          <div class="hero-logo-ring-2"></div>
+          <img
+            src="logo.png"
+            alt=""
+            class="hero-logo-img hero-animate"
+            loading="eager"
+            width="280"
+            height="280"
+          />
+          <!-- Floating capability chips -->
+          <div class="hero-chip hero-chip-1" aria-hidden="true">⚡ AI Incubation</div>
+          <div class="hero-chip hero-chip-2" aria-hidden="true">🔮 Deep Tech</div>
+          <div class="hero-chip hero-chip-3" aria-hidden="true">🚀 Acceleration</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- ══════════════════════════════════════════════════════════
+     WHAT WE DO
+══════════════════════════════════════════════════════════ -->
+<section class="section what-we-do" id="what-we-do" aria-labelledby="services-title">
+  <div class="container">
+    <header class="section-header">
+      <p class="section-label reveal" aria-hidden="true">What We Do</p>
+      <h2 class="section-title reveal reveal-delay-1" id="services-title">
+        Building the <span class="gradient-text">AI‑Native</span> future
+      </h2>
+      <p class="section-sub reveal reveal-delay-2">
+        From raw idea to market-ready product — we provide the infrastructure,
+        mentorship, and capital that AI ventures need to succeed.
+      </p>
+    </header>
+
+    <div class="services-grid">
+      <!-- Card 1: AI Incubation -->
+      <article class="glass-card service-card reveal reveal-delay-1">
+        <div class="service-icon service-icon-cyan" aria-hidden="true">
+          <svg width="26" height="26" fill="none" viewBox="0 0 24 24" focusable="false">
+            <path d="M12 2a7 7 0 0 1 5 11.9V17a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-3.1A7 7 0 0 1 12 2Z"
+              stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M9 21h6M10 18v1M14 18v1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M12 6v4M10 8h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>AI Incubation</h3>
+        <p>
+          We take AI-native ideas from napkin sketch to live product.
+          Our hands-on program gives founders the structure, resources,
+          and direction to build fast and build right.
+        </p>
+        <ul role="list">
+          <li>Idea validation &amp; product scoping</li>
+          <li>Technical architecture &amp; AI stack setup</li>
+          <li>Go-to-market strategy &amp; launch support</li>
+          <li>Dedicated mentorship through each stage</li>
+        </ul>
+      </article>
+
+      <!-- Card 2: AI Acceleration -->
+      <article class="glass-card service-card reveal reveal-delay-2">
+        <div class="service-icon service-icon-blue" aria-hidden="true">
+          <svg width="26" height="26" fill="none" viewBox="0 0 24 24" focusable="false">
+            <path d="M9.5 20.5s-1-5 2-8 8-2 8-2-1 5-4 8c-3 3-6 2-6 2Z"
+              stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M6 17s-3 0-3-3 3-6 3-6l6 6s-3 0-6 3Z"
+              stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <circle cx="14.5" cy="9.5" r="1.5" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <h3>AI Acceleration</h3>
+        <p>
+          Already a business? We help you identify where AI creates the most
+          leverage, then build and deploy it — rapidly transforming operations,
+          products, and competitive positioning.
+        </p>
+        <ul role="list">
+          <li>AI opportunity mapping &amp; strategy</li>
+          <li>Custom AI tooling &amp; agent development</li>
+          <li>Workflow automation &amp; integration</li>
+          <li>Team enablement &amp; ongoing support</li>
+        </ul>
+      </article>
+
+      <!-- Card 3: Funding & Support -->
+      <article class="glass-card service-card reveal reveal-delay-3">
+        <div class="service-icon service-icon-purple" aria-hidden="true">
+          <svg width="26" height="26" fill="none" viewBox="0 0 24 24" focusable="false">
+            <path d="M12 22L2 9l3-5h14l3 5-10 13Z"
+              stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M2 9h20M8 4l-2 5M16 4l2 5M12 9v13"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Funding &amp; Support</h3>
+        <p>
+          Beyond advice — we invest in ventures with real potential.
+          Our network connects founders with the capital, partnerships,
+          and infrastructure to scale without compromise.
+        </p>
+        <ul role="list">
+          <li>Pre-seed &amp; seed investment</li>
+          <li>Strategic partnership introductions</li>
+          <li>Technical infrastructure &amp; tooling access</li>
+          <li>Legal, finance &amp; operational foundations</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- ══════════════════════════════════════════════════════════
+     OUR PROJECTS
+══════════════════════════════════════════════════════════ -->
+<section class="section projects" id="projects" aria-labelledby="projects-title">
+  <div class="container">
+    <header class="section-header">
+      <p class="section-label reveal" aria-hidden="true">Portfolio</p>
+      <h2 class="section-title reveal reveal-delay-1" id="projects-title">
+        Our <span class="gradient-text">Projects</span>
+      </h2>
+      <p class="section-sub reveal reveal-delay-2">
+        Ventures built, backed, and accelerated by The Bot Club.
+        Each one solving a real problem at the frontier of AI.
+      </p>
+    </header>
+
+    <div class="projects-grid">
+
+      <!-- ── AgentGuard ── -->
+      <article class="glass-card project-card reveal reveal-delay-1">
+        <div class="project-logo-wrap">
+          <div class="project-logo-svg" style="background:rgba(34,211,238,0.1);border:1px solid rgba(34,211,238,0.2);" aria-hidden="true">
+            <svg width="28" height="28" fill="none" viewBox="0 0 32 32" focusable="false">
+              <path d="M16 3L5 7.5v8C5 22.3 9.9 28 16 29c6.1-1 11-6.7 11-13.5v-8L16 3Z"
+                stroke="#22d3ee" stroke-width="1.8" stroke-linejoin="round"/>
+              <circle cx="16" cy="15" r="3" stroke="#22d3ee" stroke-width="1.5"/>
+              <path d="M16 9v3M16 18v3M10 15h3M19 15h3" stroke="#22d3ee" stroke-width="1.3" stroke-linecap="round"/>
+              <circle cx="16" cy="9" r="1" fill="#22d3ee" opacity="0.5"/>
+              <circle cx="16" cy="21" r="1" fill="#22d3ee" opacity="0.5"/>
+              <circle cx="10" cy="15" r="1" fill="#22d3ee" opacity="0.5"/>
+              <circle cx="22" cy="15" r="1" fill="#22d3ee" opacity="0.5"/>
+            </svg>
+          </div>
+          <div>
+            <div class="project-name">AgentGuard</div>
+            <span class="project-tag tag-live">
+              <span aria-hidden="true"></span>
+              <span class="sr-only">Status:</span> Live
+            </span>
+          </div>
+        </div>
+        <p class="project-desc">
+          Cybersecurity for AI agents. AgentGuard protects AI systems from
+          prompt injection, data exfiltration, and adversarial attacks —
+          giving enterprises the confidence to deploy agents at scale.
+        </p>
+        <a href="https://agentguard.tech" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Visit AgentGuard website (opens in new tab)">
+          Visit agentguard.tech
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </article>
+
+      <!-- ── Tribunal ── -->
+      <article class="glass-card project-card reveal reveal-delay-2">
+        <div class="project-logo-wrap">
+          <div class="project-logo-svg" style="background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.2);" aria-hidden="true">
+            <svg width="28" height="28" fill="none" viewBox="0 0 32 32" focusable="false">
+              <path d="M11 10L6 16l5 6M21 10l5 6-5 6" stroke="#8b5cf6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14 16h4" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="8" cy="7" r="1.5" fill="#8b5cf6" opacity="0.4"/>
+              <circle cx="24" cy="7" r="1.5" fill="#8b5cf6" opacity="0.4"/>
+              <circle cx="8" cy="25" r="1.5" fill="#8b5cf6" opacity="0.4"/>
+              <circle cx="24" cy="25" r="1.5" fill="#8b5cf6" opacity="0.4"/>
+            </svg>
+          </div>
+          <div>
+            <div class="project-name">Tribunal</div>
+            <span class="project-tag tag-live">
+              <span aria-hidden="true"></span>
+              <span class="sr-only">Status:</span> Live
+            </span>
+          </div>
+        </div>
+        <p class="project-desc">
+          Enterprise code quality for Claude Code. Tribunal enforces
+          standards, reviews AI-generated code against your policies,
+          and keeps your codebase clean as AI development scales.
+        </p>
+        <a href="https://tribunal.dev" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Tribunal website (opens in new tab)">
+          Visit tribunal.dev
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </article>
+
+      <!-- ── ClawHub Marketplace ── -->
+      <article class="glass-card project-card reveal reveal-delay-3">
+        <div class="project-logo-wrap">
+          <div class="project-logo-svg" style="background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.2);" aria-hidden="true">
+            <svg width="28" height="28" fill="none" viewBox="0 0 32 32" focusable="false">
+              <rect x="5" y="14" width="9" height="9" rx="2" stroke="#3b82f6" stroke-width="1.7"/>
+              <rect x="18" y="14" width="9" height="9" rx="2" stroke="#3b82f6" stroke-width="1.7"/>
+              <rect x="11.5" y="5" width="9" height="7" rx="2" stroke="#3b82f6" stroke-width="1.7"/>
+              <path d="M9.5 14V12M22.5 14V12" stroke="#3b82f6" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M14 9h4" stroke="#3b82f6" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="project-name">ClawHub</div>
+            <span class="project-tag tag-dev">
+              <span aria-hidden="true"></span>
+              <span class="sr-only">Status:</span> In Development
+            </span>
+          </div>
+        </div>
+        <p class="project-desc">
+          Community marketplace for AI agent skills, tools, and integrations.
+          Discover, share, and deploy ready-made capabilities that extend
+          what your AI agents can do — without starting from scratch.
+        </p>
+        <span class="project-link project-link-disabled" aria-label="Coming soon — URL to be announced">
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          Launching soon
+        </span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider" aria-hidden="true"></div>
+
+<!-- ══════════════════════════════════════════════════════════
+     APPLY
+══════════════════════════════════════════════════════════ -->
+<section class="section apply" id="apply" aria-labelledby="apply-title">
+  <div class="container">
+    <div class="apply-inner">
+
+      <!-- Left: copy -->
+      <div class="apply-left reveal">
+        <p class="section-label" aria-hidden="true">Apply</p>
+        <h2 id="apply-title">
+          Tell us about<br />
+          <span class="gradient-text">your vision.</span>
+        </h2>
+        <p>
+          We're looking for bold ideas and ambitious builders. Whether
+          you're an AI startup seeking your first major backer, or a
+          business that knows AI can change everything — we want to hear from you.
+        </p>
+
+        <div class="apply-for" role="list">
+          <div class="apply-for-item" role="listitem">
+            <div class="apply-for-icon" style="background:rgba(34,211,238,0.1);" aria-hidden="true">
+              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" focusable="false">
+                <path d="M12 2a7 7 0 0 1 5 11.9V17a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-3.1A7 7 0 0 1 12 2Z"
+                  stroke="#22d3ee" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M9 21h6" stroke="#22d3ee" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="apply-for-title">AI Startups</h3>
+              <p>Early-stage ventures building AI-native products seeking support, mentorship, and funding.</p>
+            </div>
+          </div>
+          <div class="apply-for-item" role="listitem">
+            <div class="apply-for-icon" style="background:rgba(59,130,246,0.1);" aria-hidden="true">
+              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" focusable="false">
+                <rect x="3" y="3" width="7" height="7" rx="1.5" stroke="#3b82f6" stroke-width="1.8"/>
+                <rect x="14" y="3" width="7" height="7" rx="1.5" stroke="#3b82f6" stroke-width="1.8"/>
+                <rect x="3" y="14" width="7" height="7" rx="1.5" stroke="#3b82f6" stroke-width="1.8"/>
+                <path d="M17.5 14v7M14 17.5h7" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="apply-for-title">Established Businesses</h3>
+              <p>Companies ready to unlock significant value through AI transformation and automation.</p>
+            </div>
+          </div>
+          <div class="apply-for-item" role="listitem">
+            <div class="apply-for-icon" style="background:rgba(139,92,246,0.1);" aria-hidden="true">
+              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" focusable="false">
+                <path d="M12 22L2 9l3-5h14l3 5-10 13Z"
+                  stroke="#8b5cf6" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M2 9h20" stroke="#8b5cf6" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="apply-for-title">Technical Founders</h3>
+              <p>Engineers and researchers with breakthrough AI capabilities who need business and capital support.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="apply-form-wrap reveal reveal-delay-2">
+        <h2 class="form-heading">Start the conversation</h2>
+        <p class="form-sub">No pitch deck required. Just tell us what you're building.</p>
+        <p class="form-required-note"><span class="required-star" aria-hidden="true">*</span> Required fields</p>
+
+        <!-- Success state -->
+        <div class="form-success" id="form-success" role="alert" aria-live="polite" aria-atomic="true">
+          <div class="success-icon" aria-hidden="true">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24">
+              <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>We got it — thanks!</h3>
+          <p>We review every application personally and will be in touch within 48 hours.</p>
+        </div>
+
+        <!-- The form -->
+        <form
+          id="apply-form"
+          action="mailto:hello@thebot.club"
+          method="POST"
+          novalidate
+          aria-label="Application form"
+        >
+          <div class="form-grid">
+            <!-- Company name -->
+            <div class="form-group full">
+              <label for="company">
+                Company / Project Name
+                <span class="required-star" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="e.g. Acme AI"
+                required
+                aria-required="true"
+                aria-describedby="company-error"
+                autocomplete="organization"
+              />
+              <span class="form-error" id="company-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <!-- Contact person -->
+            <div class="form-group">
+              <label for="name">
+                Your Name
+                <span class="required-star" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Jane Smith"
+                required
+                aria-required="true"
+                aria-describedby="name-error"
+                autocomplete="name"
+              />
+              <span class="form-error" id="name-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email">
+                Email Address
+                <span class="required-star" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="jane@example.com"
+                required
+                aria-required="true"
+                aria-describedby="email-error"
+                autocomplete="email"
+              />
+              <span class="form-error" id="email-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <!-- Stage -->
+            <div class="form-group full">
+              <label for="stage">
+                Current Stage
+                <span class="required-star" aria-hidden="true">*</span>
+              </label>
+              <select id="stage" name="stage" required aria-required="true" aria-describedby="stage-error">
+                <option value="" disabled selected>Select your stage…</option>
+                <option value="idea">💡 Idea — still conceptualising</option>
+                <option value="mvp">🚀 MVP — building or have a prototype</option>
+                <option value="growth">📈 Growth — live product, scaling</option>
+                <option value="established">🏢 Established business seeking AI transformation</option>
+              </select>
+              <span class="form-error" id="stage-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <!-- About -->
+            <div class="form-group full">
+              <label for="about">
+                Tell us about your vision
+                <span class="required-star" aria-hidden="true">*</span>
+              </label>
+              <textarea
+                id="about"
+                name="about"
+                placeholder="What are you building? What problem does it solve? How does AI fit into the picture?"
+                required
+                aria-required="true"
+                aria-describedby="about-error"
+                rows="4"
+              ></textarea>
+              <span class="form-error" id="about-error" role="alert" aria-live="polite"></span>
+            </div>
+
+            <!-- Support checkboxes -->
+            <div class="form-group checkboxes">
+              <div class="checkbox-label" id="support-label">What kind of support are you looking for?</div>
+              <div class="checkbox-grid" role="group" aria-labelledby="support-label">
+                <label class="checkbox-item">
+                  <input type="checkbox" name="support" value="funding" />
+                  <span>💰 Funding &amp; Investment</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="support" value="technical" />
+                  <span>⚙️ Technical Build Support</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="support" value="mentorship" />
+                  <span>🧠 Mentorship &amp; Strategy</span>
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="support" value="network" />
+                  <span>🤝 Network &amp; Partnerships</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary btn-submit">
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7Z"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Send Application
+            </button>
+            <p class="form-note">
+              We read every application personally. Expect a reply within 48 hours.
+            </p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+
+      <!-- Brand column -->
+      <div class="footer-brand">
+        <a href="/" class="footer-logo" aria-label="The Bot Club home">
+          <img src="logo.png" alt="The Bot Club" width="36" height="36" loading="lazy" />
+          <span class="footer-logo-text gradient-text-silver">theBot.club</span>
+        </a>
+        <p>
+          AI incubation and acceleration studio. Building the ventures
+          that define the next era of intelligence.
+        </p>
+        <!-- Social links -->
+        <nav aria-label="Social media links">
+          <div class="footer-social">
+            <!-- Twitter / X -->
+            <a href="https://twitter.com/thebotclub" target="_blank" rel="noopener noreferrer" aria-label="The Bot Club on X (Twitter) — opens in new tab">
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M4 4l16 16M4 20L20 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/company/thebotclub" target="_blank" rel="noopener noreferrer" aria-label="The Bot Club on LinkedIn — opens in new tab">
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M7 10v7M7 7v.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M11 17v-4a2 2 0 0 1 4 0v4M11 10v1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </a>
+            <!-- GitHub -->
+            <a href="https://github.com/thebotclub" target="_blank" rel="noopener noreferrer" aria-label="The Bot Club on GitHub — opens in new tab">
+              <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/>
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Company links -->
+      <nav class="footer-col" aria-label="Company navigation">
+        <h2 class="footer-col-heading">Company</h2>
+        <ul role="list">
+          <li><a href="#what-we-do">What We Do</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#apply">Apply</a></li>
+        </ul>
+      </nav>
+
+      <!-- Projects links -->
+      <nav class="footer-col" aria-label="Projects navigation">
+        <h2 class="footer-col-heading">Projects</h2>
+        <ul role="list">
+          <li><a href="https://agentguard.tech" target="_blank" rel="noopener noreferrer">AgentGuard</a></li>
+          <li><a href="https://tribunal.dev" target="_blank" rel="noopener noreferrer">Tribunal</a></li>
+          <li><a href="#projects">ClawHub <span class="coming-soon-label">(coming soon)</span></a></li>
+        </ul>
+      </nav>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h2 class="footer-col-heading">Contact</h2>
+        <ul role="list">
+          <li>
+            <a href="mailto:hello@thebot.club" class="footer-email">hello@thebot.club</a>
+          </li>
+          <li>
+            <a href="#apply">Apply for Support</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <span>© 2026 The Bot Club. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="script.js" defer></script>
+
+</body>
+</html>

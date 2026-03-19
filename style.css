@@ -474,7 +474,7 @@ a:focus-visible, button:focus-visible {
 }
 .hero-logo-wrap {
   position: relative;
-  width: 360px; height: 360px;
+  width: 260px; height: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -513,7 +513,7 @@ a:focus-visible, button:focus-visible {
 }
 .hero-logo-ring-2 {
   position: absolute;
-  inset: -35px;
+  inset: -25px;
   border-radius: 50%;
   border: 1px solid rgba(139,92,246,0.1);
   animation: ring-spin 30s linear infinite reverse;
@@ -533,7 +533,7 @@ a:focus-visible, button:focus-visible {
   to { transform: rotate(360deg); }
 }
 .hero-logo-img {
-  width: 280px; height: 280px;
+  width: 200px; height: 200px;
   object-fit: contain;
   border-radius: 28px;
   animation: float 6s ease-in-out infinite;
@@ -542,7 +542,7 @@ a:focus-visible, button:focus-visible {
 }
 @keyframes float {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-14px); }
+  50% { transform: translateY(-8px); }
 }
 
 /* Floating chips */
@@ -1135,8 +1135,8 @@ footer {
   .hero-actions { justify-content: center; }
   .hero-stats { justify-content: center; }
   .hero-visual { margin-top: 0; }
-  .hero-logo-wrap { width: 280px; height: 280px; }
-  .hero-logo-img { width: 220px; height: 220px; }
+  .hero-logo-wrap { width: 200px; height: 200px; }
+  .hero-logo-img { width: 160px; height: 160px; }
   .hero-chip { display: none; }
   .apply-inner { grid-template-columns: 1fr; }
   .apply-left { text-align: center; }

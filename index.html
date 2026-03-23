@@ -340,42 +340,6 @@
 
     <div class="projects-grid">
 
-      <!-- ── Metrics AI ── -->
-      <article class="glass-card project-card reveal reveal-delay-1" style="order:-1;">
-        <div class="project-logo-wrap">
-          <div class="project-logo-svg" style="background:linear-gradient(135deg,rgba(99,102,241,0.15),rgba(34,211,238,0.15));border:1px solid rgba(99,102,241,0.3);" aria-hidden="true">
-            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" focusable="false">
-              <defs>
-                <linearGradient id="m8x-grad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
-                  <stop offset="0%" stop-color="#818cf8"/>
-                  <stop offset="100%" stop-color="#22d3ee"/>
-                </linearGradient>
-              </defs>
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="url(#m8x-grad)"
-                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
-            </svg>
-          </div>
-          <div>
-            <div class="project-name">Metrics AI</div>
-            <span class="project-tag tag-live">
-              <span aria-hidden="true"></span>
-              <span class="sr-only">Status:</span> Live
-            </span>
-          </div>
-        </div>
-        <p class="project-desc">
-          AI-powered KPI scorecards for business performance. Track metrics
-          with real-time anomaly detection, smart goal recommendations, and
-          automated weekly team recaps. Replace spreadsheets with live data.
-        </p>
-        <a href="https://m8x.ai" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Metrics AI website (opens in new tab)">
-          Visit m8x.ai
-          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
-      </article>
-
       <!-- ── AgentGuard ── -->
       <article class="glass-card project-card reveal reveal-delay-1">
         <div class="project-logo-wrap">
@@ -388,12 +352,18 @@
             </span>
           </div>
         </div>
+        <p class="project-tagline">Cybersecurity for AI Agents</p>
         <p class="project-desc">
-          Cybersecurity for AI agents. AgentGuard protects AI systems from
-          prompt injection, data exfiltration, and adversarial attacks —
-          giving enterprises the confidence to deploy agents at scale.
+          AgentGuard protects AI systems from prompt injection, data
+          exfiltration, and adversarial attacks — giving enterprises the
+          confidence to deploy agents at scale with full auditability.
         </p>
-        <a href="https://agentguard.tech" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Visit AgentGuard website (opens in new tab)">
+        <ul class="project-features" role="list">
+          <li>Policy engine with real-time allow/block decisions</li>
+          <li>SCIM provisioning &amp; SIEM integration</li>
+          <li>Compliance-ready audit logs &amp; reporting</li>
+        </ul>
+        <a href="https://agentguard.tech" class="btn btn-primary project-cta" target="_blank" rel="noopener noreferrer" aria-label="Visit AgentGuard website (opens in new tab)">
           Visit agentguard.tech
           <svg width="14" height="14" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
             <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -413,13 +383,59 @@
             </span>
           </div>
         </div>
+        <p class="project-tagline">Enterprise Claude Code Enhancement</p>
         <p class="project-desc">
-          Enterprise code quality for Claude Code. Tribunal enforces
-          standards, reviews AI-generated code against your policies,
-          and keeps your codebase clean as AI development scales.
+          Tribunal enforces engineering standards on every Claude Code session —
+          keeping your codebase clean, tested, and compliant as AI development scales.
         </p>
-        <a href="https://tribunal.dev" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="Visit Tribunal website (opens in new tab)">
+        <ul class="project-features" role="list">
+          <li>TDD enforcement with automated test coverage gates</li>
+          <li>Quality gates &amp; policy-driven code review</li>
+          <li>Spec workflow with AI-assisted planning</li>
+        </ul>
+        <a href="https://tribunal.dev" class="btn btn-primary project-cta" target="_blank" rel="noopener noreferrer" aria-label="Visit Tribunal website (opens in new tab)">
           Visit tribunal.dev
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </article>
+
+      <!-- ── Metrics AI ── -->
+      <article class="glass-card project-card reveal reveal-delay-3">
+        <div class="project-logo-wrap">
+          <div class="project-logo-svg" style="background:linear-gradient(135deg,rgba(99,102,241,0.15),rgba(34,211,238,0.15));border:1px solid rgba(99,102,241,0.3);" aria-hidden="true">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" focusable="false">
+              <defs>
+                <linearGradient id="m8x-grad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#818cf8"/>
+                  <stop offset="100%" stop-color="#22d3ee"/>
+                </linearGradient>
+              </defs>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="url(#m8x-grad)"
+                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="project-name">m8x.ai</div>
+            <span class="project-tag tag-live">
+              <span aria-hidden="true"></span>
+              <span class="sr-only">Status:</span> Live
+            </span>
+          </div>
+        </div>
+        <p class="project-tagline">AI-Powered Business Metrics</p>
+        <p class="project-desc">
+          Know your numbers. Run your business. AI-powered KPI scorecards with
+          real-time intelligence — replace spreadsheets with live, actionable data.
+        </p>
+        <ul class="project-features" role="list">
+          <li>Smart KPI scorecards with live anomaly detection</li>
+          <li>Intelligent goal tracking &amp; AI recommendations</li>
+          <li>Automated team performance recaps &amp; alerts</li>
+        </ul>
+        <a href="https://m8x.ai" class="btn btn-primary project-cta" target="_blank" rel="noopener noreferrer" aria-label="Visit m8x.ai website (opens in new tab)">
+          Visit m8x.ai
           <svg width="14" height="14" fill="none" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
             <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>

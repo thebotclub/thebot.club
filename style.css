@@ -751,11 +751,46 @@ a:focus-visible, button:focus-visible {
   color: var(--purple);
   border: 1px solid rgba(139,92,246,0.2);
 }
+.project-tagline {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: 8px;
+}
 .project-desc {
   font-size: 0.93rem;
   color: var(--text-muted);
   line-height: 1.7;
+}
+.project-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
   flex: 1;
+}
+.project-features li {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  padding-left: 18px;
+  position: relative;
+}
+.project-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--cyan);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+.project-cta {
+  align-self: flex-start;
+  font-size: 0.875rem;
+  padding: 10px 20px;
 }
 .project-link {
   display: inline-flex;

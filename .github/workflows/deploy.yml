@@ -48,7 +48,7 @@ jobs:
 
       - name: Validate HTML with htmlhint
         run: |
-          cat > .htmlhintrc <<'EOF'
+          cat > .htmlhintrc <<'EOF2'
           {
             "tagname-lowercase": true,
             "attr-lowercase": true,
@@ -61,7 +61,7 @@ jobs:
             "attr-no-duplication": true,
             "title-require": true
           }
-          EOF
+          EOF2
           echo "Running htmlhint on index.html..."
           htmlhint index.html
           echo "HTML validation passed."
@@ -75,10 +75,8 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: thebot-club
-          directory: .
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          command: pages deploy . --project-name=thebot-club

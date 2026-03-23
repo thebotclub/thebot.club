@@ -10,9 +10,66 @@ permissions:
   deployments: write
 
 jobs:
+  validate:
+    runs-on: ubuntu-latest
+    name: Validate HTML & Files
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check critical files exist
+        run: |
+          echo "Checking critical files..."
+          FILES_OK=true
+
+          for f in index.html style.css script.js _headers robots.txt sitemap.xml; do
+            if [ -f "$f" ]; then
+              echo "  ✅ $f"
+            else
+              echo "  ❌ MISSING: $f"
+              FILES_OK=false
+            fi
+          done
+
+          if [ "$FILES_OK" = "false" ]; then
+            echo "::error::One or more critical files are missing!"
+            exit 1
+          fi
+
+          echo "All critical files present."
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install htmlhint
+        run: npm install -g htmlhint
+
+      - name: Validate HTML with htmlhint
+        run: |
+          cat > .htmlhintrc <<'EOF'
+          {
+            "tagname-lowercase": true,
+            "attr-lowercase": true,
+            "attr-value-double-quotes": true,
+            "doctype-first": true,
+            "tag-pair": true,
+            "spec-char-escape": false,
+            "id-unique": true,
+            "src-not-empty": true,
+            "attr-no-duplication": true,
+            "title-require": true
+          }
+          EOF
+          echo "Running htmlhint on index.html..."
+          htmlhint index.html
+          echo "HTML validation passed."
+
   deploy:
     runs-on: ubuntu-latest
     name: Deploy Site
+    needs: validate
     steps:
       - name: Checkout
         uses: actions/checkout@v4

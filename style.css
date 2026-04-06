@@ -1141,6 +1141,13 @@ footer {
   transition: var(--transition);
 }
 .footer-col .footer-email:hover { opacity: 0.8; }
+.footer-address {
+  font-style: normal;
+  font-size: 0.8rem;
+  color: var(--text-faint);
+  line-height: 1.6;
+  margin-top: 14px;
+}
 .footer-bottom {
   display: flex;
   align-items: center;

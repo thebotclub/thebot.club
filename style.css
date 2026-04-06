@@ -533,12 +533,13 @@ a:focus-visible, button:focus-visible {
   to { transform: rotate(360deg); }
 }
 .hero-logo-img {
-  width: 200px; height: 200px;
+  width: 240px; height: 240px;
   object-fit: contain;
-  border-radius: 28px;
+  border-radius: 50%;
   animation: float 6s ease-in-out infinite;
   position: relative;
   z-index: 1;
+  filter: drop-shadow(0 0 20px rgba(34,211,238,0.15));
 }
 @keyframes float {
   0%, 100% { transform: translateY(0); }
@@ -1170,8 +1171,8 @@ footer {
   .hero-actions { justify-content: center; }
   .hero-stats { justify-content: center; }
   .hero-visual { margin-top: 0; }
-  .hero-logo-wrap { width: 200px; height: 200px; }
-  .hero-logo-img { width: 160px; height: 160px; }
+  .hero-logo-wrap { width: 220px; height: 220px; }
+  .hero-logo-img { width: 180px; height: 180px; }
   .hero-chip { display: none; }
   .apply-inner { grid-template-columns: 1fr; }
   .apply-left { text-align: center; }

@@ -260,8 +260,8 @@ a:focus-visible, button:focus-visible {
   letter-spacing: -0.02em;
 }
 .nav-logo img {
-  width: 40px; height: 40px;
-  border-radius: 10px;
+  width: 52px; height: 52px;
+  border-radius: 50%;
   object-fit: contain;
 }
 .nav-logo-text span { color: var(--cyan); }
@@ -533,7 +533,7 @@ a:focus-visible, button:focus-visible {
   to { transform: rotate(360deg); }
 }
 .hero-logo-img {
-  width: 240px; height: 240px;
+  width: 180px; height: 180px;
   object-fit: contain;
   border-radius: 50%;
   animation: float 6s ease-in-out infinite;
